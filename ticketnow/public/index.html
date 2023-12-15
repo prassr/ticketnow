@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width,initial-scale=1.0">
+      <link rel="icon" href="">
+      <title><%= htmlWebpackPlugin.options.title %></title>
+      <style>
+            body {
+                /* background-image: linear-gradient(to bottom left, rgba(119, 41, 83, 0.16) 0, rgba(119, 41, 83, 0.16) 49.9%, transparent 50%),linear-gradient(to bottom right, rgba(228, 228, 228, 0.5) 0, rgba(228, 228, 228, 0.5) 49.9%, transparent 50%),linear-gradient(to top left, white 0%, white 49.3%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0) 100%),linear-gradient(-89deg, #e95420 0%, #772953 42%, #2c001e 94%); */
+                background-color: #e95420 !important;
+                color: white;
+
+            }
+          header {
+              display: flex;
+              /* position: fixed; */
+              flex-direction: column;
+              width: 100%;
+              top: 0;
+                top: 0;
+                width: 100%;
+                min-width: 100%;
+                /* height: 200px; */
+                background-color: white;
+                box-shadow: 1px 1px 5px 1px violet;
+                z-index: 99999 !important;
+          }
+          .logo {
+              background-color: rgba(0, 0, 0, 0.849);
+              text-align: center;
+              padding: 10px;
+              color:white;
+          }
+          .nav-links {
+              background-color: rgba(0, 0, 0, 0.7);
+              justify-content: space-around;
+              height: 40px;
+              top: 4px;
+              padding: 2px;
+              
+          }
+
+          .notification {
+            position: fixed;
+            top: 20%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+
+        .add_button {
+            top: 100px;
+            position: fixed;
+            z-index: 10000;
+            background-color: red;
+            border: none;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background-color: rgb(30, 153, 30);
+            left: -15px;
+            box-shadow: inset 1px 1px 2px 2px #0000, 
+                        1px 1px 2px 2px #105e15c9;
+        }
+        .add_button:hover {
+                left: 10px;
+                transition: left 0.2s ease-out;
+            }
+            button > svg, button > img {
+                height: 25px;
+                width: 25px;
+                padding: 3px;
+                left: -3px;
+                margin: 0 auto;
+            }          
+            a {
+              text-decoration: none !important;
+              /* background-color: rgba(0, 0, 0, 0.54); */
+              color: #efefef;
+              width: 50%;
+              padding: 11px;
+              margin-top: 2px;
+          }
+          .nav-left {
+              vertical-align: middle;
+              position: relative;
+              top: 4px;
+              left: 4%;
+              display: inline;
+          }
+          .nav-right {
+              position: relative;
+              top: 0px;
+              display: inline;
+              float: right;
+              right: 4%;
+          }
+          .logout-button {
+              display: inline;
+              padding: 5px 15px;
+              background-color: #f44336; /* Red background color */
+              color: #fff; /* White text color */
+              border: none;
+              border-radius: 5px;
+              position: relative;
+              top: 0px;
+              cursor: pointer;
+              text-align: center;
+              text-decoration: none;
+              font-size: 16px;
+          }
+
+          /* Hover effect for the logout button */
+          .logout-button:hover {
+              background-color: #d32f2f; /* Darker red on hover */
+          }
+
+          /* Active (clicked) effect for the logout button */
+          .logout-button:active {
+              background-color: #b71c1c; /* Even darker red when clicked */
+          }
+      </style>
+  </head>
+  <body>
+    <noscript>
+      <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+    </noscript>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+  </body>
+</html>

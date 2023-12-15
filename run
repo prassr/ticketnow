@@ -1,0 +1,11 @@
+#!/bin/sh
+
+# . venv/bin/activate
+# python3 start.py
+
+# export FLASK_APP=app
+# export FLASK_ENV=local
+export FLASK_DEBUG=1
+#
+cd src
+flask run
